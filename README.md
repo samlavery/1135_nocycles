@@ -1,7 +1,6 @@
-# Formal Proof of the Collatz Conjecture in Lean 4
+# Formal Proof of the no non-trivial cycles half of the Collatz Conjecture in Lean 4
 
-A machine-checked proof that every positive integer eventually reaches 1 under
-the Collatz map, resolving [Erdos Problem #1135](https://www.erdosproblems.com/1135).
+A machine-checked proof no nontrivial cycles exist under the Collatz conjecture [Erdos Problem #1135](https://www.erdosproblems.com/1135).
 
 **Problem statement** (Erdos #1135): Define f(n) = n/2 if n is even,
 f(n) = (3n+1)/2 if n is odd. Does every positive integer eventually
@@ -21,7 +20,7 @@ equivalent to reaching 1 under f. The bridge between `collatzIter`
 The conjecture splits into two independent components:
 
 1. **No nontrivial cycles exist** --- fully proved via three independent paths
-2. **No divergent trajectories exist** --- axiomatized from the literature
+2. **No divergent trajectories exist** --- axiomatized pending pending lean4 cleanup
 
 The common engine across all three no-cycle paths is **Baker's theorem
 on linear forms in logarithms**: the irrationality measure of log\_2(3)
