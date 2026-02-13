@@ -75,6 +75,7 @@ before submission, establishing that the verification was independent.
 | Full no cycles (composite reduction + prime kill) | `8131eee3` | `aristotle/8131eee3-no-cycles-complete.lean` |
 | Perfect mixing from Baker + Tao | `0a0c584d` | `aristotle/0a0c584d-...-output.lean` |
 | No divergence via admissible set obstruction | `40b77f24` | `aristotle/40b77f24-...-output.lean` |
+| No divergence via quantitative contraction (Syracuse) | `fab4a71e` | `aristotle/fab4a71e-...-output.lean` |
 
 **Verification scope**: Aristotle independently re-proved each component
 from the prompt specification alone, producing compilable Lean 4 code
@@ -85,6 +86,7 @@ from the prompt specification alone, producing compilable Lean 4 code
 - No fixed-profile cycle exists (UFD argument)
 - Quantitative contraction: Baker + Tao → ν-sum ≥ 33 → orbit contracts
 - No divergent orbit exists (orbit bounded by descending checkpoint chain)
+- No divergent Syracuse orbit exists (quantitative contraction, v3 prompt)
 
 All Aristotle output files are in the `aristotle/` directory.
 
@@ -648,6 +650,7 @@ b6aaffb5a87e7a79d61777e9075af152f04ebca7320be16fe5abacbc  aristotle_prompt_4.md 
 356e773a90f8892710c92223674af1ac88d56116d4598997fd2ef82f  aristotle_prompt_perfect_mixing.md — Residue-hitting from Baker + Tao [superseded by v3] (0a0c584d)
 a7db235096a432f96dd6a5df005866a5497536ebf404b4b27c42625b  aristotle_prompt_no_divergence.md — No divergence via admissible set obstruction (40b77f24)
 ca98e585e8672bd3c81f03556ccf8d9be1a2e2bb305a4e4e7496f13f  aristotle_prompt_no_divergence_v2.md — No divergence via oddness obstruction (response pending)
-ef2960aefa778376cc403031f6252bb83be4541960cf6e2f11c23e60  aristotle_prompt_no_divergence_v3.md — No divergence via quantitative contraction (response pending)
+ef2960aefa778376cc403031f6252bb83be4541960cf6e2f11c23e60  aristotle_prompt_no_divergence_v3.md — No divergence via quantitative contraction (fab4a71e)
+b3b6a7c2af71fbb7a6fbc143b42bef52b21dafce72c37a8008eb2585  aristotle_prompt_collatz_full_v3.md — Full Collatz conjecture: no divergence + no cycles + bridge (response pending)
 ```
 
